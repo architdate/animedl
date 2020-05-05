@@ -1,0 +1,8 @@
+*/__pycache__
+__pycache__
+*.json
+*.txt
+*.html
+*.mkv
+*.ass
+!requirements.txt

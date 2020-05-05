@@ -1,0 +1,16 @@
+[
+    {
+        "protocol": "http",
+        "host": "127.0.0.1",
+        "port": 80,
+        "username": "username",
+        "password": "password"
+    },
+    {
+        "protocol": "http",
+        "host": "10.0.0.1",
+        "port": 80,
+        "username": "username",
+        "password": "password"
+    }
+]
