@@ -74,6 +74,9 @@ def process_funimation(url, res, path, useproxy = True, show = False, dubbed = T
             proxy_dict = json.load(f)
         proxy = funimation_auth.build_proxy(proxy_dict)
     s, token = funimation_auth.login(username, password, proxy)
+    if s == None or token == None:
+        print("Invalid credentials")
+        sys.exit(1)
     if not show:
         funimation_episode.get_episode(s, token, url, res, dubbed, path, proxy)
     else:
